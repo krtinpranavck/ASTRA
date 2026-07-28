@@ -27,6 +27,7 @@ Pain Point: Limited accessibility knowledge or time constraints lead to overlook
 
 How ASTRA Helps: Detects accessibility issues and provides clear recommendations.
 
+
 Persona 2: QA Tester / Accessibility Reviewer
 
 Goal: Verify accessibility compliance before release.
@@ -35,6 +36,7 @@ Pain Point: Manual accessibility testing is slow and repetitive.
 
 How ASTRA Helps: Automates accessibility checks and generates structured reports.
 
+
 Persona 3: DevOps Engineer
 
 Goal: Prevent inaccessible code from reaching production.
@@ -42,6 +44,7 @@ Goal: Prevent inaccessible code from reaching production.
 Pain Point: Accessibility checks are often performed too late in the development lifecycle.
 
 How ASTRA Helps: Integrates accessibility analysis into the CI/CD workflow for early issue detection.
+
 
 Persona 4: Developer Using AI-Generated Code
 
