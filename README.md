@@ -19,7 +19,7 @@ Many websites fail basic accessibility requirements, making them harder to use f
 
 **3. Target Users**
 
-Persona 1: Frontend / Student Developer
+**Persona 1: Frontend / Student Developer**
 
 Goal: Build accessible, standards-compliant web applications.
 
@@ -28,7 +28,7 @@ Pain Point: Limited accessibility knowledge or time constraints lead to overlook
 How ASTRA Helps: Detects accessibility issues and provides clear recommendations.
 
 
-Persona 2: QA Tester / Accessibility Reviewer
+**Persona 2: QA Tester / Accessibility Reviewer**
 
 Goal: Verify accessibility compliance before release.
 
@@ -37,7 +37,7 @@ Pain Point: Manual accessibility testing is slow and repetitive.
 How ASTRA Helps: Automates accessibility checks and generates structured reports.
 
 
-Persona 3: DevOps Engineer
+**Persona 3: DevOps Engineer**
 
 Goal: Prevent inaccessible code from reaching production.
 
@@ -46,7 +46,7 @@ Pain Point: Accessibility checks are often performed too late in the development
 How ASTRA Helps: Integrates accessibility analysis into the CI/CD workflow for early issue detection.
 
 
-Persona 4: Developer Using AI-Generated Code
+**Persona 4: Developer Using AI-Generated Code**
 
 Goal: Generate frontend code quickly without compromising accessibility.
 
