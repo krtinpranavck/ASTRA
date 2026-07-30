@@ -113,13 +113,135 @@ runtime-generated UI and dynamic state changes are outside the scope of the firs
 
 •	The project is a lightweight prototype and is not intended to replace comprehensive accessibility testing or manual WCAG audits.
 
-### **local development tools**
+# Quick Start – Local Development
 
-#### VS Code
-#### Git
-#### GitHub
-#### Docker Desktop
-#### Figma
-#### Draw.io
+## Prerequisites
 
+- Git
+- Node.js (v18+)
+- Python 3.12+
+- Docker Desktop
+- VS Code
+
+## Clone the Repository
+
+```bash
+git clone https://github.com/krtinpranavck/ASTRA.git
+cd ASTRA
+```
+
+## Frontend Setup
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+The frontend will run at:
+
+```
+http://localhost:5173
+```
+
+## Backend Setup
+
+```bash
+cd backend
+
+# Create virtual environment
+py -m venv venv
+
+# Activate virtual environment (Windows)
+venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Start backend server
+uvicorn main:app --reload
+```
+
+The backend API will run at:
+
+```
+http://127.0.0.1:8000
+```
+
+Interactive API Documentation:
+
+```
+http://127.0.0.1:8000/docs
+```
+
+## Docker
+
+To run the complete application using Docker:
+
+```bash
+docker-compose up --build
+```
+
+---
+
+# Local Development Tools
+
+- Visual Studio Code
+- Git & GitHub
+- Node.js & npm
+- Python 3.12
+- FastAPI
+- React + Vite
+- Docker Desktop
+- Figma
+- Draw.io
+
+---
+
+# Branching Strategy
+
+ASTRA follows a simple Git branching workflow.
+
+| Branch | Purpose |
+|---------|---------|
+| `main` | Stable production-ready code |
+| `feature/<feature-name>` | Development of individual features |
+
+Example:
+
+```
+main
+   │
+   ├── feature/docker-setup
+   ├── feature/accessibility-scanner
+   ├── feature/report-generator
+   └── feature/ui-dashboard
+```
+
+Development is performed on feature branches. After testing and review, changes are merged into the `main` branch.
+
+**Current Feature Branch Example**
+
+`feature/docker-setup`
+
+*(Insert GitHub branch screenshot here)*
+
+---
+
+# Project Structure
+
+```
+ASTRA/
+│
+├── frontend/
+├── backend/
+├── docs/
+├── diagrams/
+├── screenshots/
+├── docker/
+├── README.md
+├── docker-compose.yml
+├── .gitignore
+└── LICENSE
+```
 
