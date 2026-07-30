@@ -205,26 +205,14 @@ ASTRA follows a simple Git branching workflow.
 | Branch | Purpose |
 |---------|---------|
 | `main` | Stable production-ready code |
-| `feature/<feature-name>` | Development of individual features |
+| `feature/docker-setup` | Development of individual features |
 
-Example:
-
-```
-main
-   │
-   ├── feature/docker-setup
-   ├── feature/accessibility-scanner
-   ├── feature/report-generator
-   └── feature/ui-dashboard
-```
 
 Development is performed on feature branches. After testing and review, changes are merged into the `main` branch.
 
 **Current Feature Branch Example**
 
 `feature/docker-setup`
-
-*(Insert GitHub branch screenshot here)*
 
 ---
 
