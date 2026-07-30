@@ -113,3 +113,13 @@ runtime-generated UI and dynamic state changes are outside the scope of the firs
 
 •	The project is a lightweight prototype and is not intended to replace comprehensive accessibility testing or manual WCAG audits.
 
+local development tools
+
+* VS Code
+* Git
+* GitHub
+* Docker Desktop
+* Figma
+* Draw.io
+
+
