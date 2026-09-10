@@ -1,0 +1,107 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="astra-arch" name="ASTRA Architecture">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1400" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="n2" value="Client Layer" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashedPattern=6 3;fillColor=none;strokeColor=#3949AB;fontColor=#3949AB;verticalAlign=top;align=left;spacingLeft=8;spacingTop=6;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="90" width="420" height="110" as="geometry"/>
+        </mxCell>
+        <mxCell id="n3" value="API Layer" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashedPattern=6 3;fillColor=none;strokeColor=#00695C;fontColor=#00695C;verticalAlign=top;align=left;spacingLeft=8;spacingTop=6;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="250" width="280" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="n4" value="Processing Pipeline — Modular Backend Core (low coupling between stages)" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashedPattern=6 3;fillColor=none;strokeColor=#8E24AA;fontColor=#8E24AA;verticalAlign=top;align=left;spacingLeft=8;spacingTop=6;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="390" width="780" height="560" as="geometry"/>
+        </mxCell>
+        <mxCell id="n5" value="Persistence Layer" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashedPattern=6 3;fillColor=none;strokeColor=#2E7D32;fontColor=#2E7D32;verticalAlign=top;align=left;spacingLeft=8;spacingTop=6;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="980" width="260" height="110" as="geometry"/>
+        </mxCell>
+        <mxCell id="n6" value="USER
+Browser / Developer" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;strokeColor=#333333;fillColor=#EEF2FF;strokeColor=#3949AB;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="540" y="20" width="200" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="n7" value="React Frontend (SPA)
+Upload · Dashboard · History · Settings views" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;strokeColor=#333333;fillColor=#E8EAF6;" vertex="1" parent="1">
+          <mxGeometry x="445" y="130" width="370" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="n8" value="FastAPI Backend
+Request Router / Orchestrator" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;strokeColor=#333333;fillColor=#E0F2F1;" vertex="1" parent="1">
+          <mxGeometry x="530" y="290" width="240" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="n9" value="AST Parser Module
+(Babel: JSX/TSX -&gt; AST)" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;strokeColor=#333333;fillColor=#F3E5F5;" vertex="1" parent="1">
+          <mxGeometry x="560" y="420" width="220" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="n10" value="Rule Engine — pluggable rule modules (each implements a common IRule interface)" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashedPattern=6 3;fillColor=none;strokeColor=#6A1B9A;fontColor=#6A1B9A;verticalAlign=top;align=left;spacingLeft=8;spacingTop=6;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="510" width="740" height="110" as="geometry"/>
+        </mxCell>
+        <mxCell id="n11" value="Alt-Text
+Rule" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;strokeColor=#333333;fillColor=#FCE4EC;" vertex="1" parent="1">
+          <mxGeometry x="55" y="555" width="130" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="n12" value="Form-Label
+Rule" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;strokeColor=#333333;fillColor=#FCE4EC;" vertex="1" parent="1">
+          <mxGeometry x="200" y="555" width="130" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="n13" value="Heading-Order
+Rule" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;strokeColor=#333333;fillColor=#FCE4EC;" vertex="1" parent="1">
+          <mxGeometry x="345" y="555" width="130" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="n14" value="Keyboard-Access
+Rule" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;strokeColor=#333333;fillColor=#FCE4EC;" vertex="1" parent="1">
+          <mxGeometry x="490" y="555" width="130" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="n15" value="Semantic-HTML
+Rule" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;strokeColor=#333333;fillColor=#FCE4EC;" vertex="1" parent="1">
+          <mxGeometry x="635" y="555" width="130" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="n16" value="Severity Classifier Module" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;strokeColor=#333333;fillColor=#FFF3E0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="660" width="260" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="n17" value="Score Calculator Module" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;strokeColor=#333333;fillColor=#FFF3E0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="740" width="260" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="n18" value="Report Generator Module" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;strokeColor=#333333;fillColor=#FFF8E1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="820" width="260" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="n19" value="PostgreSQL
+scan_results · reports" style="shape=cylinder3;whiteSpace=wrap;html=1;fontSize=12;strokeColor=#2E7D32;fillColor=#E8F5E9;boundedLbl=1;" vertex="1" parent="1">
+          <mxGeometry x="55" y="1015" width="200" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="n20" value="upload source code" style="endArrow=block;html=1;fontSize=10;strokeColor=#555555;fontColor=#333333;rounded=0;" edge="1" parent="1" source="n6" target="n7">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="n21" value="HTTP request (REST/JSON)" style="endArrow=block;html=1;fontSize=10;strokeColor=#555555;fontColor=#333333;rounded=0;" edge="1" parent="1" source="n7" target="n8">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="n22" value="raw JSX" style="endArrow=block;html=1;fontSize=10;strokeColor=#555555;fontColor=#333333;rounded=0;" edge="1" parent="1" source="n8" target="n9">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="n23" value="AST" style="endArrow=block;html=1;fontSize=10;strokeColor=#555555;fontColor=#333333;rounded=0;" edge="1" parent="1" source="n9" target="n11">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="n24" value="Issue[]" style="endArrow=block;html=1;fontSize=10;strokeColor=#555555;fontColor=#333333;rounded=0;" edge="1" parent="1" source="n15" target="n16">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="n25" value="classified issues" style="endArrow=block;html=1;fontSize=10;strokeColor=#555555;fontColor=#333333;rounded=0;" edge="1" parent="1" source="n16" target="n17">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="n26" value="score + severity" style="endArrow=block;html=1;fontSize=10;strokeColor=#555555;fontColor=#333333;rounded=0;" edge="1" parent="1" source="n17" target="n18">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="n27" value="persist scan" style="endArrow=block;html=1;fontSize=10;strokeColor=#555555;fontColor=#333333;rounded=0;" edge="1" parent="1" source="n18" target="n19">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="n28" value="scan record / history" style="endArrow=block;html=1;fontSize=10;strokeColor=#555555;fontColor=#333333;rounded=0;dashed=1;" edge="1" parent="1" source="n19" target="n8">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="n29" value="HTTP response (JSON)" style="endArrow=block;html=1;fontSize=10;strokeColor=#555555;fontColor=#333333;rounded=0;dashed=1;" edge="1" parent="1" source="n8" target="n7">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="n30" value="display report / dashboard" style="endArrow=block;html=1;fontSize=10;strokeColor=#555555;fontColor=#333333;rounded=0;dashed=1;" edge="1" parent="1" source="n7" target="n6">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
