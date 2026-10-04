@@ -1,0 +1,9 @@
+fastapi>=0.110
+uvicorn>=0.29
+pydantic>=2.5
+httpx>=0.27
+databases[sqlite]>=0.9
+aiosqlite>=0.20
+sqlalchemy>=2.0
+pytest>=8.0
+mutmut==2.4.4
